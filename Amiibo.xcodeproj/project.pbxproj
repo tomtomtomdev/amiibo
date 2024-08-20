@@ -20,6 +20,8 @@
 		564489582C74603000FA785C /* AmiiboListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564489572C74602F00FA785C /* AmiiboListView.swift */; };
 		5644895A2C74606C00FA785C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564489592C74606C00FA785C /* PersistenceController.swift */; };
 		5644895C2C74609B00FA785C /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5644895B2C74609B00FA785C /* MockAPIService.swift */; };
+		569A11E02C7471EB008E7856 /* EndpointApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11DF2C7471EB008E7856 /* EndpointApi.swift */; };
+		569A11F42C749A2A008E7856 /* AmiiboDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11F32C749A2A008E7856 /* AmiiboDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		564489572C74602F00FA785C /* AmiiboListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboListView.swift; sourceTree = "<group>"; };
 		564489592C74606C00FA785C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		5644895B2C74609B00FA785C /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		569A11DF2C7471EB008E7856 /* EndpointApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointApi.swift; sourceTree = "<group>"; };
+		569A11F32C749A2A008E7856 /* AmiiboDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				564489272C745E4E00FA785C /* AmiiboApp.swift */,
-				564489512C745E5900FA785C /* Amiibo.swift */,
+				569A11EF2C74967E008E7856 /* Model */,
 				564489592C74606C00FA785C /* PersistenceController.swift */,
-				564489572C74602F00FA785C /* AmiiboListView.swift */,
-				564489552C74601C00FA785C /* AmiiboListViewModel.swift */,
-				564489532C74600200FA785C /* APIService.swift */,
-				564489292C745E4E00FA785C /* ContentView.swift */,
+				569A11F02C749687008E7856 /* View */,
+				569A11F22C7499BF008E7856 /* Presentation */,
+				569A11F12C7499B9008E7856 /* Network */,
 				5644892B2C745E5000FA785C /* Assets.xcassets */,
 				5644892D2C745E5000FA785C /* Preview Content */,
 			);
@@ -143,6 +146,41 @@
 				564489442C745E5000FA785C /* AmiiboUITestsLaunchTests.swift */,
 			);
 			path = AmiiboUITests;
+			sourceTree = "<group>";
+		};
+		569A11EF2C74967E008E7856 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				564489512C745E5900FA785C /* Amiibo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		569A11F02C749687008E7856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				564489572C74602F00FA785C /* AmiiboListView.swift */,
+				569A11F32C749A2A008E7856 /* AmiiboDetailView.swift */,
+				564489292C745E4E00FA785C /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		569A11F12C7499B9008E7856 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				564489532C74600200FA785C /* APIService.swift */,
+				569A11DF2C7471EB008E7856 /* EndpointApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		569A11F22C7499BF008E7856 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				564489552C74601C00FA785C /* AmiiboListViewModel.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +318,9 @@
 				5644895A2C74606C00FA785C /* PersistenceController.swift in Sources */,
 				5644892A2C745E4E00FA785C /* ContentView.swift in Sources */,
 				564489542C74600200FA785C /* APIService.swift in Sources */,
+				569A11E02C7471EB008E7856 /* EndpointApi.swift in Sources */,
 				564489522C745E5900FA785C /* Amiibo.swift in Sources */,
+				569A11F42C749A2A008E7856 /* AmiiboDetailView.swift in Sources */,
 				564489282C745E4E00FA785C /* AmiiboApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

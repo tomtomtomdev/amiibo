@@ -10,8 +10,8 @@ import Foundation
 class APIService {
     static let shared = APIService()
 
-    func fetchAmiibos() async throws -> [Amiibo] {
-        let url = URL(string: "https://www.amiiboapi.com/api/amiibo/")!
+    func fetchAmiibos(_ endpoint: EndpointApi) async throws -> [Amiibo] {
+        guard let url = endpoint.url else { return [] }
         let (data, _) = try await URLSession.shared.data(from: url)
         let response = try JSONDecoder().decode(AmiiboResponse.self, from: data)
         return response.amiibo

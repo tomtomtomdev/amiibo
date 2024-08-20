@@ -17,7 +17,7 @@ class AmiiboListViewModel: ObservableObject {
     func fetchAmiibos() async {
         isLoading = true
         do {
-            amiibos = try await APIService.shared.fetchAmiibos()
+            amiibos = try await APIService.shared.fetchAmiibos(.name(""))
         } catch {
             errorMessage = "Failed to load Amiibos: \(error.localizedDescription)"
         }
