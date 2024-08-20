@@ -22,6 +22,8 @@
 		5644895C2C74609B00FA785C /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5644895B2C74609B00FA785C /* MockAPIService.swift */; };
 		569A11E02C7471EB008E7856 /* EndpointApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11DF2C7471EB008E7856 /* EndpointApi.swift */; };
 		569A11F42C749A2A008E7856 /* AmiiboDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11F32C749A2A008E7856 /* AmiiboDetailView.swift */; };
+		569A11F62C74A50A008E7856 /* AmiiboDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11F52C74A50A008E7856 /* AmiiboDetailViewTests.swift */; };
+		569A11F82C74A53A008E7856 /* AmiiboListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A11F72C74A53A008E7856 /* AmiiboListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		5644895B2C74609B00FA785C /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		569A11DF2C7471EB008E7856 /* EndpointApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointApi.swift; sourceTree = "<group>"; };
 		569A11F32C749A2A008E7856 /* AmiiboDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailView.swift; sourceTree = "<group>"; };
+		569A11F52C74A50A008E7856 /* AmiiboDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboDetailViewTests.swift; sourceTree = "<group>"; };
+		569A11F72C74A53A008E7856 /* AmiiboListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				564489382C745E5000FA785C /* AmiiboTests.swift */,
+				569A11F72C74A53A008E7856 /* AmiiboListViewModelTests.swift */,
+				569A11F52C74A50A008E7856 /* AmiiboDetailViewTests.swift */,
 				5644895B2C74609B00FA785C /* MockAPIService.swift */,
 			);
 			path = AmiiboTests;
@@ -330,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				564489392C745E5000FA785C /* AmiiboTests.swift in Sources */,
+				569A11F82C74A53A008E7856 /* AmiiboListViewModelTests.swift in Sources */,
+				569A11F62C74A50A008E7856 /* AmiiboDetailViewTests.swift in Sources */,
 				5644895C2C74609B00FA785C /* MockAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

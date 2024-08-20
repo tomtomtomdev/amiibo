@@ -11,7 +11,7 @@ struct AmiiboListView: View {
 
     var body: some View {
         NavigationView {
-            List(viewModel.amiibos) { amiibo in
+            List(viewModel.filteredAmiibos) { amiibo in
                 NavigationLink(destination: AmiiboDetailView(amiibo: amiibo)) {
                     HStack {
                         AsyncImage(url: URL(string: amiibo.image)) { image in
@@ -31,6 +31,7 @@ struct AmiiboListView: View {
                 }
             }
             .navigationTitle("Amiibos")
+            .searchable(text: $viewModel.searchText, prompt: "Search Amiibos")
             .task {
                 await viewModel.fetchAmiibos()
             }
